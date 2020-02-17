@@ -9,7 +9,6 @@ def selection_sort( arr ):
         for j in range(i+1, len(arr)):
             if arr[smallest_index] > arr[j]:
                 smallest_index = j
-             
 
 
 
