@@ -1,4 +1,4 @@
-# TO-DO: complete the helpe function below to merge 2 sorted arrays
+# TO-DO: complete the hepe function below to merge 2 sorted arrays
 def merge( arrA, arrB ):
     elements = len( arrA ) + len( arrB )
     merged_arr = [0] * elements
@@ -31,3 +31,7 @@ def merge_sort_in_place(arr, l, r):
 def timsort( arr ):
 
     return arr
+
+#radix sort
+#https://www.geeksforgeeks.org/radix-sort/
+def radix_sort( arr ):
