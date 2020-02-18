@@ -37,5 +37,21 @@ def bubble_sort( arr ):
 # The count is stored in an auxiliary array and the sorting is done by mapping the count as an 
 # index of the auxiliary array.
 def count_sort( arr, maximum=-1 ):
+# Count the number of times each value appears.
+# counts[0] stores the number of 0's in the input
+# counts[4] stores the number of 4's in the input etc.
+    counts = [0] * (maximum + 1)
+    for i in arr:
+        counts[i] += 1
+    
+    num_i_before = 0
+    for i, count in enumerate(counts):
+        counts[i] = num_i_before
+        num_i_before += count
+    
+    sorted_list = [None] * len(arr)
 
-    return arr
+    for i in arr:
+        sorted_list[ counts[i] ] = i
+        counts[i]+=1
+    return sorted_list
