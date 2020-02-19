@@ -29,8 +29,6 @@ def merge_sort(arr):
     return arr
 
 # STRETCH: implement an in-place merge sort algorithm
-
-
 def merge_in_place(arr, start, mid, end):
     # TO-DO
 
@@ -45,11 +43,14 @@ def merge_sort_in_place(arr, l, r):
 
 # STRETCH: implement the Timsort function below named after tim sort ((hybrid) insertion sort + )
 # hint: check out https://github.com/python/cpython/blob/master/Objects/listsort.txt
-def timsort(arr):
+# def timsort(arr):
+#     # splitting
+#     for i in range(0, len(arr), RUN):
+#         arr[i]
 
-    return arr
+#     return arr
 
-# radix sort
+# radix/bucket sort
 # https://www.geeksforgeeks.org/radix-sort/
 # A function to do counting sort of arr[] according to
 # the digit represented by exp.
